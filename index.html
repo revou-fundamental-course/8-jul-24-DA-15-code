@@ -5,7 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body></body>
+  <body>
+    <!-- Main Title -->
+    <header class="main tittle">
+      <h1>Kalkulator BMI</h1>
+    </header>
+
+    <main>
+      <!-- Bagian Kiri - Left Contents -->
+      <section>
+        <!--Main Article-->
+        <article>
+          <p align="justify">
+            Body Mass Index (BMI) adalah cara menghitung berat badan ideal
+            berdasarkan tinggi dan berat badan, dan dimaksudkan untuk mengukur
+            massa jaringan. Ini secara luas digunakan sebagai indikator umum
+            apakah seseorang memiliki berat badan yang sehat untuk tinggi
+            badannya. Secara khusus, nilai yang diperoleh dari perhitungan BMI
+            digunakan untuk mengkategorikan apakah seseorang kekurangan berat
+            badan, berat badan normal, kelebihan berat badan, atau obesitas
+            tergantung pada rentang nilai tersebut. Rentang BMI ini bervariasi
+            berdasarkan faktor-faktor seperti wilayah dan usia, dan terkadang
+            dibagi lagi menjadi subkategori seperti sangat kekurangan berat
+            badan atau sangat obesitas. Kelebihan berat badan atau kekurangan
+            berat badan dapat memiliki efek kesehatan yang signifikan, jadi
+            meskipun BMI adalah ukuran berat badan sehat yang tidak sempurna,
+            itu adalah indikator yang berguna untuk mengetahui apakah ada
+            pengujian atau tindakan tambahan yang diperlukan. BMI juga dapat
+            dibedakan berdasarkan usia.
+          </p>
+        </article>
+
+        <!--Form-->
+        <section
+          style="border: 1px solid; padding: 12px; background-color: aliceblue"
+        >
+          <form>
+            <!-- Radio Button Jenis Kelamin -->
+            <div>
+              <input type="radio" id="selection-man" />
+              <label for="selection-man">Laki-laki</label>
+              <input type="radio" id="selection-woman" />
+              <label for="selection-woman">Perempuan</label>
+            </div>
+
+            <!-- Form input Berat dan Tinggi Badan serta Usia -->
+            <div>
+              <label for="input-berat-badan">Berat Badan</label>
+              <input type="number" id="input-berat-badan" />
+              <font style="vertical-align: inherit">Kg</font>
+            </div>
+            <div>
+              <label for="input-tinggi-badan">Tinggi Badan</label>
+              <input type="number" id="input-tinggi-badan" />
+              <font style="vertical-align: inherit">cm</font>
+            </div>
+            <div>
+              <label for="input-usia">Usia</label>
+              <input type="number" id="input-usia" />
+              <font style="vertical-align: inherit">21 s.d. 120 Tahun</font>
+            </div>
+
+            <!-- Tombol Submit dan Reset Inputan -->
+            <div>
+              <button>Submit</button>
+              <button>Reset</button>
+            </div>
+          </form>
+        </section>
+        <!--Ketentuan Section-->
+        <section>
+          <header>
+            <h2>Petunjuk Penggunaan</h2>
+          </header>
+
+          <article></article>
+        </section>
+      </section>
+
+      <!-- Bagian Kanan - Right Contents -->
+      <section>
+        <!--Result Article-->
+        <article>
+          <header>
+            <h1>Hasil</h1>
+          </header>
+
+          <!--Result Section-->
+          <section></section>
+
+          <!--Result Article-->
+          <article></article>
+
+          <!--General Information-->
+          <section></section>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
