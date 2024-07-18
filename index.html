@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>BMI Calculator</title>
+
+    <!-- Panggil CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <!-- Main Title -->
-    <header class="main tittle">
+    <header class="main-title">
       <h1>Kalkulator BMI</h1>
     </header>
 
     <main>
       <!-- Bagian Kiri - Left Contents -->
-      <section>
+      <section class="main-content">
         <!--Main Article-->
         <article>
           <p align="justify">
@@ -40,39 +42,53 @@
         </article>
 
         <!--Form-->
-        <section
-          style="border: 1px solid; padding: 12px; background-color: aliceblue"
-        >
+        <section class="main-form">
           <form>
             <!-- Radio Button Jenis Kelamin -->
             <div>
-              <input type="radio" id="selection-man" />
-              <label for="selection-man">Laki-laki</label>
-              <input type="radio" id="selection-woman" />
-              <label for="selection-woman">Perempuan</label>
+              <div><font>Jenis Kelamin: </font></div>
+              <div>
+                <input type="radio" id="selection-man" />
+                <label for="selection-man">Laki-laki</label>
+              </div>
+              <div>
+                <input type="radio" id="selection-woman" />
+                <label for="selection-woman">Perempuan</label>
+              </div>
             </div>
 
             <!-- Form input Berat dan Tinggi Badan serta Usia -->
             <div>
-              <label for="input-berat-badan">Berat Badan</label>
-              <input type="number" id="input-berat-badan" />
-              <font style="vertical-align: inherit">Kg</font>
+              <label for="input-berat-badan">Berat Badan (Kg)</label>
+              <input
+                type="number"
+                id="input-berat-badan"
+                name="input-berat-badan"
+              />
             </div>
             <div>
-              <label for="input-tinggi-badan">Tinggi Badan</label>
-              <input type="number" id="input-tinggi-badan" />
-              <font style="vertical-align: inherit">cm</font>
+              <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
+              <input
+                type="number"
+                id="input-tinggi-badan"
+                name="input-tinggi-badan"
+              />
             </div>
             <div>
-              <label for="input-usia">Usia</label>
-              <input type="number" id="input-usia" />
-              <font style="vertical-align: inherit">21 s.d. 120 Tahun</font>
+              <label for="input-usia">Usia (21 s.d. 120 Tahun)</label>
+              <input type="number" id="input-usia" name="input-usia" />
             </div>
 
             <!-- Tombol Submit dan Reset Inputan -->
             <div>
-              <button>Submit</button>
-              <button>Reset</button>
+              <button
+                style="background-color: aqua"
+                type="button"
+                onclick="updateResult()"
+              >
+                Submit
+              </button>
+              <button type="button">Reset</button>
             </div>
           </form>
         </section>
@@ -82,28 +98,44 @@
             <h2>Petunjuk Penggunaan</h2>
           </header>
 
-          <article></article>
+          <article>
+            <p align="justify">
+              Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat
+              badan kamu termasuk dalam kategori ideal atau tidak. Kalkulator
+              ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas.
+              Perlu diingat bahwa Kalkulator BMI ini tidak dapat diaplikasikan
+              untuk ibu hamil dan anak-anak karena standar BMI yang berbeda.
+            </p>
+          </article>
         </section>
       </section>
 
       <!-- Bagian Kanan - Right Contents -->
-      <section>
+      <section class="main-content">
         <!--Result Article-->
         <article>
-          <header>
-            <h1>Hasil</h1>
+          <header class="main-title">
+            <h2>Hasil</h2>
           </header>
 
           <!--Result Section-->
-          <section></section>
+          <section class="main-result">
+            <p>Hasil BMI kamu adalah</p>
+            <h2 id="bmi">--</h2>
+          </section>
 
           <!--Result Article-->
-          <article></article>
+          <article>
+            <p id="message"></p>
+          </article>
 
           <!--General Information-->
           <section></section>
         </article>
       </section>
     </main>
+
+    <!-- panggil javascripts -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

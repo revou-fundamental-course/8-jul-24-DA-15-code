@@ -1,5 +1,58 @@
 /*ini css*/
 
-.main-tittle {
+.main-title {
   text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-content {
+  flex: 1;
+  padding: 15px;
+}
+
+.input-title {
+  font-weight: bold;
+}
+
+.main-result {
+  border-radius: 15px;
+  padding: 12px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.main-form {
+  padding: 12px;
+  background-color: aliceblue;
+  border-radius: 15px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0, 5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="number"]:focus {
+  border: 3px solid #555;
+}
+
+input[type="radio"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 5%;
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    flex-direction: column;
+  }
 }
